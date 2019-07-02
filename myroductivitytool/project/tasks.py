@@ -1,0 +1,1 @@
+from myroductivitytool.taskapp.celery import app
