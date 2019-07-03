@@ -1,7 +1,7 @@
 import serpy
-import myroductivitytool.common.serpy_fields as serpy_fields
+import myproductivitytool.common.serpy_fields as serpy_fields
 
-from myroductivitytool.common.models import *
+from myproductivitytool.common.models import *
 
 from django.conf import settings
 from django.utils import timezone

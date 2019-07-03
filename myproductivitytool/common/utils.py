@@ -13,7 +13,7 @@ from django.conf import settings
 from django.core.paginator import Paginator
 from django.utils.crypto import get_random_string
 
-from myroductivitytool.common.models import *
+from myproductivitytool.common.models import *
 
 
 class CommonUtils(object):

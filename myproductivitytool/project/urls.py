@@ -1,5 +1,5 @@
 from django.conf.urls import url
-import myroductivitytool.project.views as project_views
+import myproductivitytool.project.views as project_views
 
 app_name = 'project'
 

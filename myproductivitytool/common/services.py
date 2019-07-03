@@ -5,9 +5,9 @@ import mimetypes
 import base64
 import requests
 
-from myroductivitytool.common.models import *
-from myroductivitytool.common.serializers import *
-from myroductivitytool.common.utils import CommonUtils
+from myproductivitytool.common.models import *
+from myproductivitytool.common.serializers import *
+from myproductivitytool.common.utils import CommonUtils
 
 from django.utils import timezone
 from datetime import datetime, timedelta, date

@@ -30,8 +30,8 @@ elif [ "$1" == "up" ]; then
 
 elif [ "$1" == "deletemigrations" ]; then
 	echo -e "Deleting Migrations Folders"
-	sudo rm -rf myroductivitytool/common/migrations/
-	sudo rm -rf myroductivitytool/project/migrations/
+	sudo rm -rf myproductivitytool/common/migrations/
+	sudo rm -rf myproductivitytool/project/migrations/
 
 else
 	echo -e "This command is not yet supported"

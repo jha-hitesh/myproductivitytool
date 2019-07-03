@@ -1,5 +1,5 @@
 from django.conf.urls import url
-import myroductivitytool.common.views as common_views
+import myproductivitytool.common.views as common_views
 
 app_name = 'common'
 

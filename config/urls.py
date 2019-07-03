@@ -24,11 +24,11 @@ urlpatterns = [
 	# Your stuff: custom urls includes go here
 
 	url(r'^api/', 
-		include('myroductivitytool.project.urls', 
+		include('myproductivitytool.project.urls', 
 			namespace='projects')),
 
 	url(r'^api/common/', 
-		include('myroductivitytool.common.urls', 
+		include('myproductivitytool.common.urls', 
 			namespace='common')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

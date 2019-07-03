@@ -1,13 +1,13 @@
-from myroductivitytool.common.utils import *
-from myroductivitytool.common.models import * 
-from myroductivitytool.common.responses import *
-from myroductivitytool.common.serializers import *
-from myroductivitytool.common.services import *
+from myproductivitytool.common.utils import *
+from myproductivitytool.common.models import * 
+from myproductivitytool.common.responses import *
+from myproductivitytool.common.serializers import *
+from myproductivitytool.common.services import *
 
-from myroductivitytool.project.utils import *
-from myroductivitytool.project.models import * 
-from myroductivitytool.project.serializers import *
-from myroductivitytool.project.services import *
+from myproductivitytool.project.utils import *
+from myproductivitytool.project.models import * 
+from myproductivitytool.project.serializers import *
+from myproductivitytool.project.services import *
 
 from django.conf import settings
 from django.shortcuts import render

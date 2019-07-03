@@ -1,7 +1,7 @@
-from myroductivitytool.common.services import *
-from myroductivitytool.project.models import *
+from myproductivitytool.common.services import *
+from myproductivitytool.project.models import *
 
-from myroductivitytool.project.serializers import *
+from myproductivitytool.project.serializers import *
 
 from django.db.models.functions import Concat
 from django.db.models import F, Value, CharField

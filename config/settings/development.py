@@ -28,12 +28,12 @@ INSTALLED_APPS = (
     'storages',
 
     # Your apps
-    'myroductivitytool.common',
-    'myroductivitytool.project'
+    'myproductivitytool.common',
+    'myproductivitytool.project'
 )
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 DROPBOX_OAUTH2_TOKEN = os.environ['dropbox_token']
 
-BACKEND_URL = 'https://myroductivitytool1000.herokuapp.com'
-FRONTEND_URL = 'https://myroductivitytooldemo.herokuapp.com'
+BACKEND_URL = 'https://myproductivitytool.herokuapp.com'
+FRONTEND_URL = 'https://myproductivitytoolui.herokuapp.com'

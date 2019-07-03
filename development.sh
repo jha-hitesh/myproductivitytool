@@ -36,7 +36,7 @@ elif [ "$1" == "test" ]; then
 
 elif [ "$1" == "start_celery" ]; then
 	echo -e "Starting celery workers..."
-	celery worker -A myroductivitytool.taskapp.celery
+	celery worker -A myproductivitytool.taskapp.celery
 
 else
 	echo -e "This command is not yet supported"

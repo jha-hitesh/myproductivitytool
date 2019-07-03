@@ -1,0 +1,1 @@
+from myproductivitytool.taskapp.celery import app

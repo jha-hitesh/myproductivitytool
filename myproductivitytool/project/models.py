@@ -6,8 +6,8 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.contrib.postgres.fields import JSONField, ArrayField
 
-from myroductivitytool.common.models import *
-from myroductivitytool.common.customfields import *
+from myproductivitytool.common.models import *
+from myproductivitytool.common.customfields import *
 
 
 class BaseProjectEntity(models.Model):

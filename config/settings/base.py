@@ -4,9 +4,9 @@ import environ
 import datetime
 from django.utils.crypto import get_random_string
 
-ROOT_DIR = environ.Path(__file__) - 3  # (myroductivitytool/config/settings/base.py - 3 = myroductivitytool/)
+ROOT_DIR = environ.Path(__file__) - 3  # (myproductivitytool/config/settings/base.py - 3 = myproductivitytool/)
 BASE_DIR = str(ROOT_DIR)
-APPS_DIR = ROOT_DIR.path('myroductivitytool')
+APPS_DIR = ROOT_DIR.path('myproductivitytool')
 
 # Load operating system environment variables and then prepare to use them
 env = environ.Env()
@@ -31,8 +31,8 @@ INSTALLED_APPS = (
     'corsheaders',
 
     # Your apps
-    'myroductivitytool.common',
-    'myroductivitytool.project'
+    'myproductivitytool.common',
+    'myproductivitytool.project'
 )
 
 MIDDLEWARE = (
@@ -50,7 +50,7 @@ MIDDLEWARE = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myroductivitytool',
+        'NAME': 'myproductivitytool',
         'USER': 'testuser',
         'PASSWORD': 'password',
         'HOST': 'localhost',
@@ -67,7 +67,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 #Migration Modules
 MIGRATION_MODULES = {
-    'sites': 'myroductivitytool.contrib.sites.migrations'
+    'sites': 'myproductivitytool.contrib.sites.migrations'
 }
 
 # Static files (CSS, JavaScript, Images)
@@ -192,8 +192,8 @@ CORS_ALLOW_HEADERS = (
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'https://myroductivitytooldemo.herokuapp.com',
-    'https://myroductivitytool1000.herokuapp.com'
+    'https://myproductivitytool.herokuapp.com',
+    'https://myproductivitytoolui.herokuapp.com'
 )
 
 CORS_ALLOW_CREDENTIALS = True
