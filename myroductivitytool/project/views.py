@@ -144,9 +144,6 @@ class Projects(APIView):
 			if start_date > end_date:
 				return exception(message='Start date can not be greater than end date')
 
-			avatar = request.FILES.get('avatar', None)
-			keep_previous_avatar = data.get('keepPreviousAvatar', 'no')
-
 			status = data.get('status')
 			if status not in ['UPC', 'ONG', 'CMP']:
 				return bad_request(message='The status selected is invalid')
@@ -154,7 +151,6 @@ class Projects(APIView):
 			# Fetch always mendatory fields
 
 			entity_data.update({
-				'avatar': avatar,
 				'status': status,
 				'end_date': end_date,
 				'name': data.pop('name'),

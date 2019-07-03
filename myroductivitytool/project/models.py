@@ -30,7 +30,6 @@ class Project(BaseProjectEntity, BaseModel):
 		('CMP', 'Completed')
 	)
 
-	avatar 				= models.FileField(null=True, blank=True)
 	status 				= models.CharField(choices=STATUS_CHOICES ,max_length=3)
 
 

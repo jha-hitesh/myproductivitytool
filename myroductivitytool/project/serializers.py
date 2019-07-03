@@ -28,17 +28,7 @@ class BaseProjectEntitySerializer(serpy.Serializer):
 
 class ProjectSerializer(BaseProjectEntitySerializer, BaseModelSerializer):
 
-    avatar = serpy.MethodField('get_avatar_url', label='avatar')
-    has_avatar = serpy.MethodField('get_has_avatar', label='hasAvatar')
-
-    def get_has_avatar(self, instance):
-        return True if instance.avatar else False
-
-    def get_avatar_url(self, instance):
-        try:
-            return '{0}{1}'.format(settings.BACKEND_URL, (instance.avatar.url if instance.avatar else static('images/project.png')))
-        except Exception as e:
-            print(e)
+    pass
 
 
 class TaskSerializer(BaseProjectEntitySerializer, BaseModelSerializer):
