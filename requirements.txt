@@ -1,6 +1,6 @@
 
 #Django
-Django==2.2
+Django==2.2.4
 
 
 # Rest apis
