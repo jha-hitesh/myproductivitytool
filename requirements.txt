@@ -4,7 +4,7 @@ Django==2.2
 
 
 # Rest apis
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 djangorestframework-jwt==1.11.0
 pytz==2018.5
 requests==2.21.0
