@@ -1,0 +1,32 @@
+version: "3.4"
+services:
+  myproductivitytool:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: myproductivitytool
+    container_name: myproductivitytool
+    platform: linux/amd64
+    networks:
+      - productivitynetwork
+    volumes:
+      - .:/srv/
+    tty: true
+    ports:
+      - "8000:8000"
+  postgresql:
+    image: postgres:14.6
+    container_name: postgresql
+    hostname: postgresql
+    environment:
+      POSTGRES_DB: productivity
+      POSTGRES_USER: productivityuser
+      POSTGRES_PASSWORD: productivitypassword
+    ports:
+      - "5432:5432"
+    networks:
+      - productivitynetwork
+
+networks:
+  productivitynetwork:
+    name: productivitynetwork
